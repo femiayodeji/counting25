@@ -81,7 +81,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Sin.Acts.SetEnabled,
 		C3.Plugins.System.Cnds.PickByComparison,
 		C3.ScriptsInEvents.Levels_es_Event12_Act2,
-		C3.ScriptsInEvents.Dailytask_es_Event2_Act1
+		C3.ScriptsInEvents.Dailytask_es_Event6_Act1
 	];
 };
 self.C3_JsPropNameTable = [

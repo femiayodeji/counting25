@@ -1526,6 +1526,7 @@ self.C3_ExpressionFuncs = [
 		() => 400,
 		() => 123,
 		() => 1169,
+		() => "Levels",
 		() => "DAILY_TASK",
 		() => 3
 ];

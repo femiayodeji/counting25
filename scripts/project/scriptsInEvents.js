@@ -172,7 +172,7 @@ const scriptsInEvents = {
 		runtime.globalVars.LevelRoundLimit = numbers.length;
 	},
 
-	async Dailytask_es_Event2_Act1(runtime, localVars)
+	async Dailytask_es_Event6_Act1(runtime, localVars)
 	{
 		window.parent.postMessage(
 		{

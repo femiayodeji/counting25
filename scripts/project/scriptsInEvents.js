@@ -5,15 +5,6 @@ const scriptsInEvents = {
 
 	async Interface_es_Event1_Act1(runtime, localVars)
 	{
-		window.parent.postMessage(
-		{
-		    "action": "daily_task_completed",
-			"payload": {}
-		},"*");
-	},
-
-	async Interface_es_Event2_Act1(runtime, localVars)
-	{
 		window.addEventListener("message", event=>{
 			const obj = event.data;
 			if(obj && obj.action && obj.payload)
@@ -38,12 +29,13 @@ const scriptsInEvents = {
 					//Store user game data from web app...
 					runtime.globalVars.Coins = obj.payload.C25_Coin || 0;
 					runtime.globalVars.Level = obj.payload.C25_Level || 1;
+					runtime.globalVars.GameMode = obj.payload.gameMode || "";			
 				}
 			}
 		})
 	},
 
-	async Interface_es_Event3_Act1(runtime, localVars)
+	async Interface_es_Event2_Act1(runtime, localVars)
 	{
 		window.parent.postMessage(
 		{
@@ -51,7 +43,7 @@ const scriptsInEvents = {
 		},"*");
 	},
 
-	async Interface_es_Event4_Act1(runtime, localVars)
+	async Interface_es_Event3_Act1(runtime, localVars)
 	{
 		window.parent.postMessage(
 		{
@@ -62,7 +54,7 @@ const scriptsInEvents = {
 		},"*");
 	},
 
-	async Interface_es_Event5_Act1(runtime, localVars)
+	async Interface_es_Event4_Act1(runtime, localVars)
 	{
 		window.parent.postMessage(
 		{
@@ -73,7 +65,7 @@ const scriptsInEvents = {
 		},"*");
 	},
 
-	async Interface_es_Event6_Act1(runtime, localVars)
+	async Interface_es_Event5_Act1(runtime, localVars)
 	{
 		window.parent.postMessage(
 		{
@@ -85,7 +77,7 @@ const scriptsInEvents = {
 		
 	},
 
-	async Interface_es_Event7_Act1(runtime, localVars)
+	async Interface_es_Event6_Act1(runtime, localVars)
 	{
 		window.parent.postMessage(
 		{
@@ -97,7 +89,7 @@ const scriptsInEvents = {
 		},"*");
 	},
 
-	async Interface_es_Event8_Act1(runtime, localVars)
+	async Interface_es_Event7_Act1(runtime, localVars)
 	{
 		window.parent.postMessage(
 		{
@@ -108,7 +100,7 @@ const scriptsInEvents = {
 		},"*");
 	},
 
-	async Interface_es_Event9_Act1(runtime, localVars)
+	async Interface_es_Event8_Act1(runtime, localVars)
 	{
 		window.parent.postMessage(
 		{
@@ -119,7 +111,7 @@ const scriptsInEvents = {
 		},"*");
 	},
 
-	async Interface_es_Event10_Act1(runtime, localVars)
+	async Interface_es_Event9_Act1(runtime, localVars)
 	{
 		window.addEventListener("message", event=>{
 			const obj = event.data;
@@ -178,6 +170,15 @@ const scriptsInEvents = {
 		
 		runtime.globalVars.Sequence = shuffle(numbers).join(',');
 		runtime.globalVars.LevelRoundLimit = numbers.length;
+	},
+
+	async Dailytask_es_Event2_Act1(runtime, localVars)
+	{
+		window.parent.postMessage(
+		{
+		    "action": "daily_task_completed",
+			"payload": {}
+		},"*");
 	}
 
 };

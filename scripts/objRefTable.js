@@ -55,7 +55,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.ScriptsInEvents.Interface_es_Event7_Act1,
 		C3.ScriptsInEvents.Interface_es_Event8_Act1,
 		C3.ScriptsInEvents.Interface_es_Event9_Act1,
-		C3.ScriptsInEvents.Interface_es_Event10_Act1,
 		C3.Plugins.SpeechSynthesis.Acts.StopSpeaking,
 		C3.Plugins.System.Acts.SetBoolVar,
 		C3.Plugins.System.Exps.choose,
@@ -81,7 +80,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.Compare,
 		C3.Behaviors.Sin.Acts.SetEnabled,
 		C3.Plugins.System.Cnds.PickByComparison,
-		C3.ScriptsInEvents.Levels_es_Event12_Act2
+		C3.ScriptsInEvents.Levels_es_Event12_Act2,
+		C3.ScriptsInEvents.Dailytask_es_Event2_Act1
 	];
 };
 self.C3_JsPropNameTable = [
@@ -146,9 +146,6 @@ self.C3_JsPropNameTable = [
 	{UserLastname: 0},
 	{Username: 0},
 	{AppId: 0},
-	{GameMode: 0},
-	{DailyTaskCounter: 0},
-	{DAILY_TASK_LIMIT: 0},
 	{dataKey: 0},
 	{value: 0},
 	{GameplayLayout: 0},
@@ -158,7 +155,10 @@ self.C3_JsPropNameTable = [
 	{LevelRoundLimit: 0},
 	{Sequence: 0},
 	{IsFullMode: 0},
-	{DemoLimit: 0}
+	{DemoLimit: 0},
+	{GameMode: 0},
+	{DailyTaskCounter: 0},
+	{DAILY_TASK_LIMIT: 0}
 ];
 
 self.InstanceType = {

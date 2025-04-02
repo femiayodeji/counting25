@@ -1,6 +1,5 @@
 
 
-
 const scriptsInEvents = {
 
 	async Interface_es_Event1_Act1(runtime, localVars)
@@ -172,7 +171,7 @@ const scriptsInEvents = {
 		runtime.globalVars.LevelRoundLimit = numbers.length;
 	},
 
-	async Dailytask_es_Event6_Act1(runtime, localVars)
+	async Dailytask_es_Event7_Act1(runtime, localVars)
 	{
 		window.parent.postMessage(
 		{
@@ -180,8 +179,6 @@ const scriptsInEvents = {
 			"payload": {}
 		},"*");
 	}
-
 };
 
 self.C3.ScriptsInEvents = scriptsInEvents;
-
